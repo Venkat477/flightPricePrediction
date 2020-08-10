@@ -37,7 +37,7 @@ def predictPrice(depDate_,depTime_,arrTime_,depart_,goingTo_,stops_,airline_,ran
         
 def selectOptions():
     try:
-        mlModel = open('/home/venkata/Desktop/Study/FlightFarePredictionData/FlightFarerForest.pkl','rb')
+        mlModel = open('FlightFarerForest.pkl','rb')
         randomForest_ = pickle.load(mlModel)
         depDate_ = st.date_input("Departure Date")
         depTime_ = st.time_input("Departure Time")
